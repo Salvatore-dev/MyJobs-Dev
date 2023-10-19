@@ -1,0 +1,55 @@
+.introduction {
+    margin-top: 1rem;
+  }
+  
+  .introduction h1 {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 1rem;
+  }
+  
+  .introduction h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  .introduction h5{
+    text-align: center;
+  }
+  
+  .introduction p {
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  .introduction li {
+    list-style-type: none;
+    text-align: justify;
+    padding: 0.4rem;
+    font-size: large;
+  }
+  .introduction ol.list-book {
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  
+  .introduction span {
+    font-size: 12px;
+    color: gray;
+  }
+  
+  
+  .invitation {
+    text-align: justify;
+    font-style: oblique;
+    font-size: 18px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+
+  }
+  .introduction-research{
+    font-size: larger;
+  }
+  

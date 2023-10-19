@@ -1,0 +1,33 @@
+.area-text {
+    margin-top: 20px;
+  }
+  
+  .area-text .verse-search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .area-text p {
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: justify;
+  }
+  
+  .area-text span {
+    font-weight: bold;
+  }
+  
+  .area-text input {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .area-text input:active{
+    transform: translateY(3px);
+  }
+  
+
+  
+ 

@@ -1,0 +1,122 @@
+.topnav {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links-navbar {
+  display: flex;
+  margin-right: 0.6rem;
+}
+
+.links-navbar li {
+  list-style: none;
+}
+
+.links-navbar a {
+  display: flex;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.custom-select {
+  display: flex;
+  padding-left: 10px;
+}
+
+
+.area-switch span {
+  margin-left: 15px;
+}
+
+.switch {
+  position: relative;
+  width: 45px;
+  display: flex;
+  height: 26px;
+  margin-right: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  right: 1px;
+  bottom: 6px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch input:checked+.slider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.search-area {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search-area>div>span {
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.search-text {
+  display: flex;
+  align-items: center;
+}
+
+.search-text input[type=text] {
+  padding: 10px;
+  font-size: 14px;
+  width: 80%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.search-text button {
+  width: 20%;
+  padding: 10px;
+  font-size: 14px;
+  border-left: none;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.search-text button:active {
+  transform: translateY(0.5px);
+}

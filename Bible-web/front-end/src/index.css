@@ -1,0 +1,332 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Georgia, 'Georgia', Times, serif;
+}
+
+:root {
+  --layout-color: rgb(73, 64, 64);
+  --character-color: rgb(25, 145, 25);
+  --second-character-color: rgb(127, 212, 127);
+  --text-color: black;
+  --alert-color: rgb(161, 0, 0);
+  --alert-color-hover: red;
+  --secure-color-hover: rgb(127, 212, 127);
+  --secure-color: rgb(25, 145, 25);
+  --caution-color: rgb(218, 218, 0);
+  --second-text-color: white;
+  --text-area: #f1f1f1;
+  --second-text-area: #d2e9d4;
+  --background-text-area: rgb(255, 255, 255);
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo p {
+  font-variant: small-caps;
+  font-size: xx-large;
+  color: var(--text-color);
+}
+
+.logo span {
+  font-variant: small-caps;
+  font-size: x-large;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--text-color);
+}
+
+.header-verse {
+  width: 30%;
+}
+
+.header-verse {
+  font-style: oblique;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.select-menu label {
+  color: var(--text-color);
+}
+
+.topnav {
+  background-color: var(--layout-color);
+}
+
+.links-navbar a {
+  color: var(--second-text-color);
+}
+
+.links-navbar a:hover {
+  background-color: var(--second-character-color);
+  color: var(--text-color);
+}
+
+#login {
+  background-color: var(--secure-color);
+}
+
+#login:hover {
+  background-color: var(--secure-color-hover);
+}
+
+#logout {
+  background-color: var(--alert-color);
+}
+
+#logout:hover {
+  background-color: var(--alert-color-hover);
+}
+
+#exit-session {
+  background-color: var(--alert-color);
+}
+
+#exit-session:hover {
+  background-color: var(--alert-color-hover);
+  cursor: pointer;
+}
+
+#continue-session {
+  background-color: var(--secure-color);
+  cursor: pointer;
+}
+
+#continue-session:hover {
+  background-color: var(--secure-color-hover);
+}
+
+.slider {
+  background-color: var(--second-character-color);
+}
+
+.slider:before {
+  background-color: var(--text-color);
+}
+
+.switch input:checked+.slider {
+  background-color: var(--character-color);
+}
+
+.switch input:focus+.slider {
+  box-shadow: 0 0 1px var(--layout-color);
+}
+
+.search-area>div>span {
+  color: var(--second-text-color);
+}
+
+.search-text input[type=text] {
+  border: 1px solid var(--second-character-color);
+  background-color: var(--text-area);
+  border: 1px solid var(--second-character-color);
+}
+
+.search-text button {
+  color: var(--second-text-color);
+  background-color: var(--secure-color);
+}
+
+.search-text button:hover {
+  background-color: var(--secure-color-hover);
+  color: var(--text-color)
+}
+
+.search-text button:active {
+  background-color: var(--secure-color);
+  color: var(--second-text-color);
+}
+
+
+.form-users input[type=text],
+input[type=password] {
+  background-color: var(--text-area);
+}
+
+.form-users input[type=text]:focus,
+input[type=password]:focus {
+  background-color: var(--second-text-area);
+}
+
+.form-users button {
+  color: var(--second-text-color);
+  background-color: var(--secure-color);
+}
+
+.form-users button:hover {
+  color: var(--text-color);
+  background-color: var(--secure-color-hover);
+}
+
+.form-users button:active {
+  background-color: var(--secure-color);
+  box-shadow: 0 5px var(--second-character-color)
+}
+
+.form-users .cancelbtn {
+  color: var(--second-text-color);
+  background-color: var(--alert-color);
+}
+
+.form-users .cancelbtn:hover {
+  color: var(--text-color);
+  background-color: var(--alert-color-hover);
+}
+
+.form-users .cancelbtn:active {
+  background-color: var(--alert-color);
+  box-shadow: 0 5px var(--alert-color-hover);
+}
+
+.redirect button {
+  color: var(--second-text-color);
+  background-color: var(--secure-color);
+}
+
+.redirect button:hover {
+  color: var(--text-color);
+  background-color: var(--secure-color-hover);
+}
+
+.redirect button:active {
+  background-color: var(--secure-color);
+  box-shadow: 0 5px var(--second-character-color)
+}
+
+.body-main {
+  display: flex;
+
+}
+
+.body-text {
+  width: 70%;
+  margin-left: 10%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: var(--background-text-area);
+}
+
+.profile {
+  width: 30%;
+  margin-left: 5%;
+}
+
+.user-detail {
+  background-color: var(--second-text-area);
+  border: 1px solid black;
+}
+
+.user-detail input {
+  color: var(--second-text-color);
+  background-color: var(--alert-color);
+}
+
+.user-detail input:hover {
+  background-color: var(--alert-color-hover);
+  color: var(--text-color);
+}
+
+.user-detail input:active {
+  background-color: var(--alert-color);
+  box-shadow: 0 5px var(--alert-color-hover);
+}
+
+.area-text input {
+  color: var(--text-area);
+}
+
+.area-text input[type="submit"][value="Rimuovi"] {
+  background-color: var(--alert-color);
+}
+
+.area-text input[type="submit"][value="Rimuovi"]:hover {
+  background-color: var(--alert-color-hover);
+  color: var(--text-color);
+}
+
+.area-text input[type="submit"][value="Aggiungi"] {
+  background-color: var(--secure-color);
+}
+
+.area-text input[type="submit"][value="Aggiungi"]:hover {
+  background-color: var(--secure-color-hover);
+  color: var(--text-color);
+}
+
+.area-text input:active {
+  background-color: var(--secure-color);
+  box-shadow: 0 5px var(--second-character-color);
+}
+
+footer {
+  width: 100%;
+  background-color: var(--layout-color);
+  color: var(--second-text-color);
+  padding: 20px;
+  color: rgb(147, 155, 152);
+}
+
+footer h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer-informations {
+  display: flex;
+  justify-content: space-around;
+  align-content: baseline;
+}
+
+.general-informations {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.details-footer {
+  margin-bottom: 5px;
+}
+
+.details-footer p {
+  font-weight: bold;
+  margin: 0;
+  text-align: justify;
+  margin-top: 0.5rem;
+}
+
+.space {
+  flex: 1;
+}
+
+.mandatory.citations {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.mandatory.citations p {
+  text-align: justify;
+}
+
+.mandatory.citations a {
+  color: var(--second-character-color);
+}
+
+.mandatory.citations a:hover {
+  text-decoration: underline;
+}

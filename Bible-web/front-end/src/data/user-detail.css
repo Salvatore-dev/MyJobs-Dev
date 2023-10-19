@@ -1,0 +1,54 @@
+.user-detail {
+  margin: 20px 20px;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border-style: none;
+}
+
+.user-detail h2 {
+  font-size: 24px;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.user-detail .list-favorites {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.user-detail.favorites {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-detail .favorites h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.user-detail p {
+  margin: 0;
+  text-align: justify;
+}
+
+.user-detail span {
+  font-weight: bold;
+}
+
+.user-detail input {
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+  border-radius: 5px;
+  
+}
+
+.user-detail input:active {
+  transform: translateY(3px);
+}

@@ -1,0 +1,70 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 1101px) {
+
+  .topnav {
+    align-items: center;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 1100px) {
+
+  .search-area {
+    align-self: flex-end;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .links-navbar {
+    margin-top: 1rem;
+    align-self: flex-end;
+  }
+
+  .custom-select {
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  header {
+    justify-content: center;
+  }
+
+  .header-verse {
+    display: none;
+  }
+
+  .links-navbar {
+    align-self: center;
+  }
+
+  .topnav {
+    flex-direction: column-reverse;
+  }
+
+  .search-area {
+    align-self: center;
+  }
+
+  .custom-select {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .user-detail h2 > span {
+    font-size: large;
+  }
+}
